@@ -15,9 +15,9 @@ class TimeOfDay(IntEnum):
 
 def time_of_day() -> int:
     h = datetime.now().hour
-    if h <= 10:
+    if h < 10:
         return TimeOfDay.MORNING
-    if h <= 18:
+    if h < 18:
         return TimeOfDay.DAY
     return TimeOfDay.EVENING
 

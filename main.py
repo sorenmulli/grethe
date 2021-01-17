@@ -15,8 +15,11 @@ def main():
         if click_wait():
             print("Clicked!")
             speak(sayings.time_greeting(), lang)
+
             speak(textdb.get_text("prestatus"), lang)
             speak(sayings.coronastatus(), lang)
+            for saying in sayings.news():
+                speak(saying, lang)
             speak(textdb.get_text("poststatus"), lang)
 
 if __name__ == '__main__':

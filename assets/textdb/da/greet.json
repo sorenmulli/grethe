@@ -6,5 +6,11 @@
     "goodday":
         ["Goddag", "Dav"],
     "goodevening":
-        ["Godaften"]
+        ["Godaften", "Godaften, Pinie vej"],
+    "prestatus":
+        ["Her kommer opdateringen", "Jeg har en status til jer", "Hør lige her", "Klar til de nyeste meldinger?" ],
+    "poststatus":
+        ["Det var alt fra mig.", "Så har jeg altså ikke mere.", "Hav en god dag", "Kærlig hilsen ... eller hvad man siger", "Det var dét!"],
+    "corona":
+        ["Nyeste corona tal. {infected} smittede, ud af {tested} testede. Der er {total_admissions} indlagte."]
 }

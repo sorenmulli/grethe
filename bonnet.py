@@ -6,7 +6,7 @@ except ImportError:
     print("Could not load aiy.")
 
 def click_wait():
-    if not LOADED: return
+    if not LOADED: return 1
     b = aiy.board.Button()
     b.wait_for_release()
     return True

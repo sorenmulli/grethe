@@ -1,4 +1,4 @@
-# james
+# Grethe
 
 Personal voice assistant.
 

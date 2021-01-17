@@ -12,4 +12,5 @@ cd james
 python3 -m venv pyjames
 source pyjames/bin/activate
 pip install -r requirements.txt
+pip install ~/AIY-voice-kit-python
 ```

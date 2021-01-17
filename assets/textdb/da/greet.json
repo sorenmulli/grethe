@@ -1,0 +1,10 @@
+{
+    "hello":
+        ["Hej", "Halløj", "Hva' så?", "Vær hilset", "Hey"],
+    "goodmorning":
+        ["Godmorgen", "Morgen"],
+    "goodday":
+        ["Goddag", "Dav"],
+    "goodevening":
+        ["Godaften"]
+}

@@ -16,6 +16,7 @@ def speak(words: str, lang: str):
         sound = pyglet.media.load("_.mp3", file=f)
     # Handle playing of the playback
     player = sound.play()
+    player.volume = .5
     playtime = player.source.duration
     while (playtime - TICK) > 0:
         pyglet.app.platform_event_loop.dispatch_posted_events()

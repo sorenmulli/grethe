@@ -6,6 +6,7 @@ from gtts import gTTS
 
 pyglet.options["audio"] = ("pulse",)
 TICK = 0.1
+VOLUME = 0.5
 
 def speak(words: str, lang: str, print_: bool=True):
     if print_:
@@ -19,8 +20,7 @@ def speak(words: str, lang: str, print_: bool=True):
         sound = pyglet.media.load("_.mp3", file=f, streaming=False)
     # Handle playing of the playback
     player = sound.play()
-    player.volume = .5
-    playtime = player.source.duration
+    player.volume = VOLUME
     while player.playing:
         pyglet.app.platform_event_loop.dispatch_posted_events()
         pyglet.clock.tick()

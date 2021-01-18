@@ -6,7 +6,7 @@ from gtts import gTTS
 
 pyglet.options["audio"] = ("pulse",)
 TICK = 0.1
-VOLUME = 0.5
+VOLUME = 0.15
 
 def speak(words: str, lang: str, print_: bool=True):
     if print_:

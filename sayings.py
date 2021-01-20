@@ -23,8 +23,8 @@ def time_of_day() -> int:
 
 
 class Sayings:
-    corona_url = "https://services5.arcgis.com/Hx7l9qUpAnKPyvNz/arcgis/rest/services/stats_all_final/FeatureServer/"\
-        "0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Date%20desc&resultOffset=0&resultRecordCount=1&resultType=standard&cacheHint=true"
+    corona_url = "https://services5.arcgis.com/Hx7l9qUpAnKPyvNz/arcgis/rest/services/DB_kommunalt_data_gdb/FeatureServer/7/"\
+            "query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Date%20desc&resultOffset=0&resultRecordCount=1&resultType=standard&cacheHint=true"
     news_url = "https://jyllands-posten.dk/?service=rssfeed&mode=area&areaNames=level0,topflow"
 
     def __init__(self, textdb: TextDB):

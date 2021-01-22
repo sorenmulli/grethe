@@ -2,18 +2,15 @@
     "hello":
         ["Hej", "Halløj", "Hva' så?", "Vær hilset", "Hey"],
     "goodmorning":
-        ["Godmorgen", "Morgen"],
+        ["Godmorgen", "Morgen", "Hej, jeg håber I har en god morgen"],
     "goodday":
-        ["Goddag", "Dav"],
+        ["Goddag", "Dav", "Goddag, allesammen"],
     "goodevening":
-        ["Godaften", "Godaften, Pinie vej"],
+        ["Godaften", "Godaften, Pinie-vej", "Behagelig aften til jer"],
     "prestatus":
         ["Her kommer opdateringen", "Jeg har en status til jer", "Hør lige her", "Klar til de nyeste meldinger?" ],
     "poststatus":
-        ["Det var alt fra mig.", "Så har jeg altså ikke mere.", "Hav en god dag", "Kærlig hilsen ... eller hvad man siger", "Det var dét!"],
-    "corona":
-        ["Nyeste corona-tal. {infected} smittede, ud af {tested} testede. Der er {total_admissions} indlagte."],
-    "news":
-        ["Her kommer overskrifterne", "Dette er, hvad aviserne skriver i øjeblikket", "De seneste overskrifter kommer her", "Avisen skriver"]
-
+        ["Det var alt fra mig.", "Hav det godt", "Nu ikke mere", "Så er der ikke mere at sige",
+            "Jeg har ikke mere at tilføje", "Så venter jeg bare på næste tryk",
+            "Så har jeg altså ikke mere.", "Kærlig hilsen ... eller hvad man siger", "Det var dét!"]
 }

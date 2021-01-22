@@ -1,0 +1,10 @@
+{
+    "corona":
+        ["Nyeste corona-tal. {infected} smittede, ud af {tested} testede. Der er {total_admissions} indlagte.",
+        "Corona-opdatering: Der er blevet smitted {infected}, testet {tested} og der er {total_admissions} på hospitalerne",
+        "Med hensyn til corona: {infected} positive ud af {tested}. Vi har {total_admissions} indlagte",
+        "Der er {infected} positiver ud af {tested} corona-testede. Indlagte: {total_admissions}" ],
+    "news":
+        ["Her kommer overskrifterne", "Dette er, hvad aviserne skriver i øjeblikket", "De seneste overskrifter kommer her", "Avisen skriver",
+        "Følgende foregår ude i verden", "Jeg har læst følgende", "Hør nyhederne", "De friskeste nyheder her" ]
+}

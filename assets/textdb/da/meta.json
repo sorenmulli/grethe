@@ -1,0 +1,7 @@
+{
+    "booted":
+        ["Så er jeg igang", "Så kører jeg", "Klar til at modtage tryk", "Klar. Afventer tryk"],
+    "speakerror":
+        ["Der skete en fejl. Du kan prøve at trykke igen."]
+}
+

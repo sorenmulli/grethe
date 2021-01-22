@@ -27,5 +27,6 @@ def click_wait():
 
 def set_colour(colour: Col):
     if not LOADED: return
+    rgb = colour.value
     with Leds() as leds:
-        leds.update(Leds.rgb_on(colour))
+        leds.update(Leds.rgb_on(rgb))

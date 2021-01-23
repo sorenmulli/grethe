@@ -1,32 +1,30 @@
 from enum import Enum
 
 LOADED = False
+
 try:
     from aiy.board import Board
     from aiy.leds import Leds
-    LOADED = True
 except ImportError:
-    print("Could not load aiy.")
+    print("WARNING: Could not load aiy. You can still run in debug mode")
 
-class Col(Enum):
-    """
-    Predefined colours for button.
-    """
-    BOOT    = (255, 153, 0)    # Orange
-    WAIT    = (102, 255, 204)  # Turqouis
-    WORKING = (102, 0, 255)    # Purple
-    ACTIVE  = (255, 102, 255)  # Pink
+class Bonnet:
+    """Communication with bonnet button led and bonnet microphone"""
 
+    col_boot    = (255, 153, 0)    # Orange
+    col_wait    = (102, 255, 204)  # Turqouis
+    col_working = (102, 0, 255)    # Purple
+    col_speak   = (255, 102, 255)  # Pink
 
+    def __init__(self):
+        self.leds = Leds()
+        self.board = Board()
 
-def click_wait():
-    if not LOADED: return
-    with Board() as board:
-        board.button.wait_for_release()
-    return True
+        self.current_col = None
 
-def set_colour(colour: Col):
-    if not LOADED: return
-    rgb = colour.value
-    with Leds() as leds:
-        leds.update(Leds.rgb_on(rgb))
+    def wait_for_button(self):
+        self.board.button.wait_for_release()
+
+    def set_colour(self, col: tuple):
+        self.leds.update(Leds.rgb_on(col))
+        self.current_col = col

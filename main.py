@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 from argparse import ArgumentParser
 
 from sayings import Sayings
@@ -60,6 +61,12 @@ class AssistantApp:
         if not self.debug:
             self.bonnet.set_colour(old_col)
 
+    def stop(self):
+        if not self.debug:
+            self.bonnet.leds.close()
+            self.bonnet.board.close()
+
+
 if __name__ == '__main__':
     parser = ArgumentParser(description="Run the Grethe Voice Assistant")
     parser.add_argument("--lang", help="Set another language than danish, for example, 'en'", default="da")
@@ -67,4 +74,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     app = AssistantApp(args.lang, debug=args.debug)
-    app.run()
+    try:
+        app.run()
+    except KeyboardInterrupt:
+        print("\nIntercepted keyboard interruption")
+        print("Shutting down...")
+        app.stop()
+        sys.exit()

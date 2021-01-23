@@ -1,7 +1,3 @@
-from enum import Enum
-
-LOADED = False
-
 try:
     from aiy.board import Board
     from aiy.leds import Leds

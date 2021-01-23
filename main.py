@@ -63,7 +63,7 @@ class AssistantApp:
 
     def stop(self):
         if not self.debug:
-            self.bonnet.leds.close()
+            self.bonnet.leds.reset()
             self.bonnet.board.close()
 
 

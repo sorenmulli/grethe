@@ -14,7 +14,7 @@ class Bonnet:
     col_boot    = (255, 153, 0)    # Orange
     col_wait    = (102, 255, 204)  # Turqouis
     col_working = (102, 0, 255)    # Purple
-    col_speak   = (255, 102, 255)  # Pink
+    col_speak   = (68, 117, 47)    # Green
 
     def __init__(self):
         self.leds = Leds()
